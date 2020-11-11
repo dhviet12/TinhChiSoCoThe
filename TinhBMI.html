@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cơ thể</title>
+</head>
+<body>
+<script>
+    let weight=parseFloat(prompt("Nhập vào số cân nặng (kg):"));
+    let height=parseFloat(prompt("Nhập vào số chiều cao (m)"));
+    let bmi=weight/(height * height);
+    if (bmi < 18) {
+        alert("Chỉ số BMI của bạn là: " + bmi + ' Quá gầy');
+    } else if (bmi < 25) {
+        alert("Chỉ số BMI của bạn là: " + bmi + ' Bình thường');
+    } else if (bmi < 30) {
+        alert("Chỉ số BMI của bạn là: " + bmi + ' Quá cân');
+    } else {
+        alert("Chỉ số BMI của bạn là: " + bmi + ' Béo phì');
+    }
+</script>
+
+</body>
+</html>
